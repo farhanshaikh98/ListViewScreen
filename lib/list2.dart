@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tabbar_listview/detail.dart';
+
+import 'package:tabbar_listview/detail2.dart';
 
 import 'package:tabbar_listview/model/modeldata2.dart';
 
@@ -31,8 +32,8 @@ class _ListView2State extends State<ListView2> {
                     builder: (
                       context,
                     ) =>
-                        DetailScreen(
-                      myList: myList2[index],
+                        DetailScreen2(
+                      mylist2: myList2[index],
                     ),
                   ),
                 );

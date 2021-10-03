@@ -37,9 +37,7 @@ class _ListView1State extends State<ListView1> {
                           builder: (
                             context,
                           ) =>
-                              DetailScreen(
-                            myList: myList[index],
-                          ),
+                              DetailScreen(mylist: myList[index]),
                         ),
                       );
                     },

@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:tabbar_listview/model/modeldata.dart';
+import 'package:tabbar_listview/model/modeldata2.dart';
 
-class DetailScreen extends StatelessWidget {
-  final ModelDemo mylist;
-  const DetailScreen({Key? key, required this.mylist}) : super(key: key);
+class DetailScreen2 extends StatelessWidget {
+  final Model mylist2;
+  const DetailScreen2({Key? key, required this.mylist2}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "${mylist.title}",
+          "${mylist2.name}",
+          
         ),
         backgroundColor: Colors.greenAccent,
       ),
@@ -19,15 +20,15 @@ class DetailScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(
-              Icons.call,
+              Icons.account_circle_sharp,
               size: 150,
             ),
             Text(
-              "${mylist.title}",
+              "${mylist2.name}",
               style: TextStyle(fontSize: 60),
             ),
             Text(
-              "Incoming call \n${mylist.subTitle}",
+              "Contact number \n${mylist2.number}",
               style: TextStyle(fontSize: 30),
             ),
           ],
